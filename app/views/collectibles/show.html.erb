@@ -1,0 +1,34 @@
+
+<p>
+  <strong>Name:</strong>
+  <%= @collectible.name %>
+</p>
+
+<p>
+  <strong>Mintage:</strong>
+  <%= @collectible.mintage %>
+</p>
+
+<p>
+  <strong>Current bid:</strong>
+  <%= @collectible.current_bid %>
+</p>
+
+<p>
+  <strong></strong>
+  <%= image_tag(@collectible.img, size: "200x200", alt: "Collectible Image") %>
+</p>
+<p>
+  <strong>Timer:</strong>
+  <%= @collectible.timer %>
+</p>
+<% if user_signed_in? %>
+<% if @collectible.user_id != current_user.id  %>
+<%= link_to 'Place a bid', new_collectible_auction_path(@collectible)%> |
+
+<% end%> 
+<%else%>
+<h1>Please Sign in</h1>
+<%end%>
+<%= link_to 'Edit', edit_collectible_path(@collectible) %> |
+<%= link_to 'Back', collectibles_path %>
