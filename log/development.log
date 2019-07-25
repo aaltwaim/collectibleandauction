@@ -18714,3 +18714,105 @@ Processing by CollectiblesController#edit as HTML
 Completed 200 OK in 69ms (Views: 59.5ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/collectibles" for ::1 at 2019-07-25 09:08:09 +0300
+Processing by CollectiblesController#index as HTML
+  Rendering collectibles/index.html.erb within layouts/application
+  [1m[36mCollectible Load (1.1ms)[0m  [1m[34mSELECT "collectibles".* FROM "collectibles" WHERE (name ILIKE '%%')[0m
+  ↳ app/views/collectibles/index.html.erb:27
+  Rendered collectibles/index.html.erb within layouts/application (9.3ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 79ms (Views: 73.0ms | ActiveRecord: 2.3ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-07-25 09:08:31 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5tQo3R4Hii64rI2+WJBf7MKG0Ds3b/QCeIqYcwK7+3OXdfshX2PQbXYqGqQ2zTePGM1yQaj6mZCrkHRWwJWLig=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/aaltwaim/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (39.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/aaltwaim/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/aaltwaim/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 74ms (ActiveRecord: 40.4ms)
+
+
+Started GET "/" for ::1 at 2019-07-25 09:08:31 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 85ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/collectibles" for ::1 at 2019-07-25 09:08:52 +0300
+Processing by CollectiblesController#index as HTML
+  Rendering collectibles/index.html.erb within layouts/application
+  [1m[36mCollectible Load (5.1ms)[0m  [1m[34mSELECT "collectibles".* FROM "collectibles" WHERE (name ILIKE '%%')[0m
+  ↳ app/views/collectibles/index.html.erb:27
+  Rendered collectibles/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 64ms (Views: 49.9ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-07-25 09:08:53 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (9.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 70ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-07-25 09:08:54 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l/jLj461sCoEjbJBvud989fVL+nB9Ng6jwwzkklaT7C6ifrUuqA//zAcaZ8Y7K+3OX+WFm8oycoW5+O1Jrc95A==", "user"=>{"email"=>"abdullahaltwaim@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (176.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "abdullahaltwaim@hotmail.com"], ["LIMIT", 1]]
+  ↳ /Users/aaltwaim/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 340ms (ActiveRecord: 176.7ms)
+
+
+Started GET "/" for ::1 at 2019-07-25 09:08:54 +0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collectibles" for ::1 at 2019-07-25 09:08:56 +0300
+Processing by CollectiblesController#index as HTML
+  Rendering collectibles/index.html.erb within layouts/application
+  [1m[36mCollectible Load (12.0ms)[0m  [1m[34mSELECT "collectibles".* FROM "collectibles" WHERE (name ILIKE '%%')[0m
+  ↳ app/views/collectibles/index.html.erb:27
+  Rendered collectibles/index.html.erb within layouts/application (19.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 66ms (Views: 48.9ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/collectibles/21" for ::1 at 2019-07-25 09:09:00 +0300
+Processing by CollectiblesController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mCollectible Load (2.5ms)[0m  [1m[34mSELECT  "collectibles".* FROM "collectibles" WHERE "collectibles"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/collectibles_controller.rb:81
+  Rendering collectibles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/collectibles/show.html.erb:25
+  Rendered collectibles/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 48ms (Views: 38.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/collectibles/21/auctions/new" for ::1 at 2019-07-25 09:09:02 +0300
+Processing by AuctionsController#new as HTML
+  Parameters: {"collectible_id"=>"21"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/aaltwaim/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCollectible Load (1.4ms)[0m  [1m[34mSELECT  "collectibles".* FROM "collectibles" WHERE "collectibles"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/auctions_controller.rb:19
+  Rendering auctions/new.html.erb within layouts/application
+  Rendered auctions/_form.html.erb (3.0ms)
+  Rendered auctions/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 51ms (Views: 36.7ms | ActiveRecord: 3.8ms)
+
+
