@@ -14,12 +14,16 @@ Full stack application using Ruby on Rails and Postgresql.
 
 This website has three resources including user, auction, and collectible; and it allow the user to put their collectible coins and bank notes which include name, image, mintage, and initial bid to allow other user to put a bidding on them in the auction. The users can edit, see, and delete their collectible item. User can sign up, sign in and sign out using an email address and a password. The auction page include the history of all biddings include image, previous and current bid connecting it with the collectible page with an id.
 
+![Alt text](/2.png?raw=true "Title")
+
 ##Some additional features
 1- allow only the user who created the item to edit, or destroy the item
 2- Does not allow the user who created the item to bid on them
 3- allow the user to see his collectible and auction items in a different page
 4- search bar for the name in the collectible page.
-5- 
+5- add timer for the auctions
+
+![Alt text](/3.png?raw=true "Title")
 
 
 
