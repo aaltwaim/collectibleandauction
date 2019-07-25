@@ -16,15 +16,17 @@ This website has three resources including user, auction, and collectible; and i
 
 ![Alt text](/2.png?raw=true "Title")
 
-##Some additional features
+
+
+## Some additional features
+
 1- allow only the user who created the item to edit, or destroy the item
 2- Does not allow the user who created the item to bid on them
 3- allow the user to see his collectible and auction items in a different page
 4- search bar for the name in the collectible page.
-5- add timer for the auctions
+
 
 ![Alt text](/3.png?raw=true "Title")
-
 
 
 
@@ -37,3 +39,4 @@ This website has three resources including user, auction, and collectible; and i
 3- Build eCommerce API
 
 4- add a model search for advance search
+5- add timer for the auctions
