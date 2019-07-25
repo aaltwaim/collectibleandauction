@@ -1,7 +1,6 @@
 
 
 
-
 <h1>Collectibles</h1>
 <h3>Go to show to place a bid </h3>
 <%= link_to 'New Collectible', new_collectible_path %> | 
@@ -33,7 +32,7 @@
         <td><%= collectible.current_bid %></td>
         
         <td><%= image_tag(collectible.img, size: "200x200", alt: "Collectible Image") %></td>
-        <td id='countdown'> </td>
+        <td class='countdown'> </td>
         
         <td><%= link_to 'Show', collectible %></td>
         <td><%= link_to 'Edit', edit_collectible_path(collectible) %></td>
